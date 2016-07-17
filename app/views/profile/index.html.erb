@@ -1,0 +1,20 @@
+<h2>Update Profile</h2>
+<div class="row">
+  <%= form_for @user, url: "/profile", class: 'col s12' do |f| %>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.text_field :first_name %>
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+          <%= f.text_field :last_name %>
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn right">Save</button>
+    </div>
+
+  <% end %>
+</div>

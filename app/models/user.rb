@@ -5,12 +5,16 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :username, {
-    :uniqueness => { :case_sensitive => true }, 
+    :uniqueness => { :case_sensitive => true },
     :presence => true
   }
 
   validates :last_name,:first_name,
   :presence => true,
   :length => { :within => 1..255, :allow_blank => true }
+
+  def display_name
+    first_name.present? ? "#{first_name} #{last_name}" : email
+  end
 
 end
