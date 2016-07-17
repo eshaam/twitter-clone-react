@@ -13,6 +13,8 @@ class User < ApplicationRecord
   :presence => true,
   :length => { :within => 1..255, :allow_blank => true }
 
+  has_many :tweets
+
   def display_name
     first_name.present? ? "#{first_name} #{last_name}" : email
   end
