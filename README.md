@@ -7,6 +7,7 @@ $ git clone [git-repo-url] twitter-clone-react
 $ cd twitter-clone-react
 $ bundle install
 $ rake db:migrate
+$ npm install
 $ webpack
 $ rails s
 ```
