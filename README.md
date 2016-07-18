@@ -1,24 +1,18 @@
-# README
+![screenshot](http://i.imgur.com/HtWa1QJ.png "screenshot")
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
 
-Things you may want to cover:
+```sh
+$ git clone [git-repo-url] twitter-clone-react
+$ cd twitter-clone-react
+$ bundle install
+$ rake db:migrate
+$ webpack
+$ rails s
+```
 
-* Ruby version
 
-* System dependencies
+### Todos
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Follow features
+ - Add Code Comments
